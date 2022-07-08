@@ -49,7 +49,10 @@ Ejecutamos el siguiente comando
     docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Password' -p 1433:1433 -v ${pwd}/data:/var/opt/mssql/data -v ${pwd}/log:/var/opt/mssql/log -v ${pwd}/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2019-latest
 
 -e son los parametros de configuracion
+
 -p son los puertos a utilizar externo:internoImagen
+
 -v define las rutas de memoria  local:rutaImagen para guardar datos de forma persistente
+
 -d hace que no requiera el uso en primer plano de la terminal para funcionar y mandarlo a background.
 
